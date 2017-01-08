@@ -186,7 +186,7 @@ public class Score {
     }
     
     public void writeScoresFile() {
-        this.writeScoresFile(SCORES_FILENAME);
+        this.writeScoresFile("data/" + SCORES_FILENAME);
     }
     
 }
