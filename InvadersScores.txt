@@ -1,0 +1,10 @@
+nobody;500
+nobody;400
+nobody;300
+nobody;200
+nobody;100
+nobody;50
+nobody;40
+nobody;30
+nobody;20
+nobody;10
