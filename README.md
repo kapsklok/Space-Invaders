@@ -11,7 +11,7 @@ A clone of the classic Space Invaders game using the Processing library in Java
 
 ###Installation:
 
-* Download the SpaceInvaders.zip, extract the contents to a folder, and run the correct file for your OS
+* Download the SpaceInvaders.zip, extract the folder, and run the correct executable for your OS
 
 ---
 
