@@ -148,15 +148,15 @@ class Config {
       BADDIE_HITBOX_WIDTH = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_HITBOX_WIDTH") + 1) );
       BADDIE_HITBOX_HEIGHT = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_HITBOX_HEIGHT") + 1) );
       BADDIE_BOTTOM_HEIGHT = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_BOTTOM_HEIGHT") + 1) );
-      
-      BADDIE_MOVE_SPEED = BADDIE_HITBOX_WIDTH;
-      BADDIE_HEALTH = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_HEALTH") + 1) );
-      BADDIE_SCORE = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_SCORE") + 1) );
-      
+
       BADDIES_PER_ROW = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIES_PER_ROW") + 1) );
       BADDIES_SPAWN_WIDTH = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIES_SPAWN_WIDTH") + 1) );
       BADDIES_SPAWN_HEIGHT = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIES_SPAWN_HEIGHT") + 1) );
       
+      BADDIE_MOVE_SPEED = BADDIES_SPAWN_WIDTH * Float.parseFloat( settingsList.get( indexInArrayList(settingsList, "BADDIE_MOVE_SPEED") + 1) );
+      BADDIE_HEALTH = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_HEALTH") + 1) );
+      BADDIE_SCORE = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIE_SCORE") + 1) );
+            
       BADDIES_MIN_X = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIES_MIN_X") + 1) );
       BADDIES_MAX_X = DISP_WIDTH - BADDIES_MIN_X;
       BADDIES_MIN_Y = Integer.parseInt( settingsList.get( indexInArrayList(settingsList, "BADDIES_MIN_Y") + 1) );

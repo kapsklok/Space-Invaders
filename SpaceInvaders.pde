@@ -223,7 +223,7 @@ int[] calculateBaddiesMove() {
   int[] baddiesToMove = new int[2];
   
   // If it is time to move
-  if (framesSinceBaddieMove > conf.FRAMES_BETWEEN_BADDIE_MOVES) {
+  if (framesSinceBaddieMove > conf.FRAMES_BETWEEN_BADDIE_MOVES - wave) {
     //move and reset counter
     baddiesToMove[0] = baddiesMoveDirection;
     framesSinceBaddieMove = 0;
@@ -422,7 +422,7 @@ void spawnBaddies(int layers) {
   // create rows of baddies
   for (int j = 0; j < layers; j++) {
     for (int i = 0; i < conf.BADDIES_PER_ROW; i++) {
-      baddies.add(new Baddie(conf.BADDIES_MIN_X + conf.BADDIES_SPAWN_WIDTH * i, conf.BADDIES_MIN_Y + j * conf.BADDIES_SPAWN_HEIGHT, wave * 5));
+      baddies.add(new Baddie(conf.BADDIES_MIN_X + conf.BADDIES_SPAWN_WIDTH * i, conf.BADDIES_MIN_Y + j * conf.BADDIES_SPAWN_HEIGHT));
       baddiesOnScreen++;
     }
   }
