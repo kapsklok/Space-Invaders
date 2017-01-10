@@ -157,6 +157,16 @@ void processBaddies() {
         
     if (b.isPlayer) {
       //Player
+      if (player.xpos < player.hitboxWidth / 2 - 1) {
+        player.setMove(0, 0);
+        player.xpos = player.hitboxWidth / 2;
+        player.hitboxX = player.xpos - player.hitboxWidth / 2;
+      } else if (player.xpos > width - (player.hitboxWidth / 2) + 1) {
+        player.setMove(0, 0);
+        player.xpos = width - player.hitboxWidth / 2;
+        player.hitboxX = player.xpos - player.hitboxWidth / 2;
+
+      }
       
     } else {
       // Baddie
@@ -416,7 +426,7 @@ void spawnBaddies(int layers) {
     }
   }
   // calculate time until end of wave based on current speed
-  movesBeforeTurnaround = (int) floor((conf.DISP_WIDTH - conf.BADDIES_TOTAL_WIDTH) / baddies.get(baddies.size() - 1).moveSpeed);
+  movesBeforeTurnaround = (int) floor((conf.DISP_WIDTH - conf.BADDIES_TOTAL_WIDTH) / (baddies.get(baddies.size() - 1).moveSpeed) - 1);
   
 }
 

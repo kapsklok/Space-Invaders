@@ -104,8 +104,8 @@ class Player {
   
   void move() {
     xpos += xspeed;
-    ypos += yspeed;
     hitboxX += xspeed;
+    ypos += yspeed;
     hitboxY += yspeed;
   }
   
