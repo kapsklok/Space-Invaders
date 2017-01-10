@@ -157,6 +157,16 @@ void processBaddies() {
         
     if (b.isPlayer) {
       //Player
+      if (player.xpos < player.hitboxWidth / 2 - 1) {
+        player.setMove(0, 0);
+        player.xpos = player.hitboxWidth / 2;
+        player.hitboxX = player.xpos - player.hitboxWidth / 2;
+      } else if (player.xpos > width - (player.hitboxWidth / 2) + 1) {
+        player.setMove(0, 0);
+        player.xpos = width - player.hitboxWidth / 2;
+        player.hitboxX = player.xpos - player.hitboxWidth / 2;
+
+      }
       
     } else {
       // Baddie
