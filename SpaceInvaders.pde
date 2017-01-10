@@ -97,6 +97,7 @@ void draw() {
     textSize(20);
     if (initialized) { text("GAME OVER", width / 2 - 60, (height - floorHeight) / 2); }
     text("Enter your Name", width / 2 - 80, (height - floorHeight) / 2 + 25);
+    text(playerName + "_", width / 2 - 80, (height - floorHeight) / 2 + 45);
     showFramerate();
     return;
   }
