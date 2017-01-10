@@ -19,4 +19,4 @@ A clone of the classic Space Invaders game using the Processing library in Java
 
 * High scores get added to the list twice
 
-* Baddies often go off scree, and the player is allowed to do so freely
+<strike>* Baddies often go off scree, and the player is allowed to do so freely</strike>
