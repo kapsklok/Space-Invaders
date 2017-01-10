@@ -416,7 +416,7 @@ void spawnBaddies(int layers) {
     }
   }
   // calculate time until end of wave based on current speed
-  movesBeforeTurnaround = (int) floor((conf.DISP_WIDTH - conf.BADDIES_TOTAL_WIDTH) / baddies.get(baddies.size() - 1).moveSpeed);
+  movesBeforeTurnaround = (int) floor((conf.DISP_WIDTH - conf.BADDIES_TOTAL_WIDTH) / (baddies.get(baddies.size() - 1).moveSpeed) - 1);
   
 }
 
